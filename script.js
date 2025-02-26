@@ -73,5 +73,13 @@ let result = num2 == num3 ? "yes": "no"
 
 
 
+// home work
+let m =2
+console.log(m)
+m=3
+console.log(m)
+
+const lol=3
+console.log(lol)
 
 

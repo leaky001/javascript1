@@ -175,12 +175,3 @@ for(let i = 0; i < 10; i++) {
 
 
 
-let table = 5;
-for(let i = 1; i <= 10; i++) {
-    console.log(`${table} * ${i}= ${table * i}`);
-}
-let i, x ='';
-for (i = 0; i <= 5; i++) {
-    x += i;
-    console.log(x);
-}
