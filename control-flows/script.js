@@ -173,5 +173,7 @@ for(let i = 0; i < 10; i++) {
     console.log(i);
 } 
 
+ console.log(2) (2)+3-3*7/3*5 %2
+
 
 

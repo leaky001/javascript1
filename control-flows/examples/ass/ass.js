@@ -43,3 +43,4 @@ let result = (num % 3 === 0 && num % 5 === 0) ? "FizzBuzz" :
              num;
 
 console.log(result); 
+console.log((2*6)+3-3*7/3*5%2)
