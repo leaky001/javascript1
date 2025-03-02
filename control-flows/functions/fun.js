@@ -16,17 +16,17 @@
 // }
 
 
-function add (a,b) {
+function lol (a,b) {
     return a+b;
 }
 
-console.log(add(1,2))
+console.log(lol(1,2))
 
-function jamb (age) {
-    if (age > 30) {
+function jamb (mon) {
+    if (mon> 30) {
         return "You are too old to register"
 
-    } else if (age < 30 && age > 18)  {
+    } else if (mon < 30 && mon > 18)  {
         return "you are qualified to register"
 
     } else{
@@ -34,6 +34,8 @@ function jamb (age) {
     }
 }
 console.log(jamb(19))
+
+
 console.log(myDays('sunday'))
 
 function myDays (day) {
@@ -54,24 +56,24 @@ function myDays (day) {
 }
 
 function everyDay (day) {
-    switch (day){
-        case "monday":
-            return "A bright day"
+switch (day){
+     case "monday":
+     return "A bright day"
 
-            case "tuesday":
-                return "A sunny day"
-                case "wednesday":
-                    return "frosty"
-                    case "thursday":
-                        return "hectic"
-                        case "friday":
-                            return "wet"
-                            case "saturday":
-                                return "it weekend"
-                                case "sunday":
-                                    return "tmr is sunday"
-                                    default:
-                                        "ehnnn"
+     case "tuesday":
+     return "A sunny day"
+     case "wednesday":
+        return "frosty"
+     case "thursday":
+          return "hectic"
+     case "friday":
+         return "wet"
+     case "saturday":
+          return "it weekend"
+     case "sunday":
+         return "tmr is sunday"
+         default:
+           "ehnnn"
 
 
     }
