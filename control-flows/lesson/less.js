@@ -106,7 +106,7 @@ reet();
 const leto = () => {
     console.log("Hllo, zulu"); 
 };
-leto();
+leto(); 
 
 // 4; fun parameters
 function gree(name) {
@@ -124,7 +124,7 @@ return a + b;
 let res= add (2, 4);
 console.log(res);
 
-// default para
+// default parameters
 
 function greet(no = "Guest") {
     console.log(`wa, ${no}`);
@@ -132,15 +132,6 @@ function greet(no = "Guest") {
 }
 greet () ;
 greet('mum')
-
-
-
-
-
-
-
-
-
 
 
 
