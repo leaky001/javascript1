@@ -69,7 +69,7 @@ container.innerHTML = `
 container.style.backgroundColor = "black"
 container.style.color = "orange"
 
-// // adding and removing classes
+// // adding and removing class name
 
 h6.classList.add("subheader")
 
@@ -126,7 +126,16 @@ const nexBox  =document.createElement('div')
 
 nexBox.textContent = "How are you doing Today"
 
-document.body.appendChild(newBox)            
+document.body.appendChild(newBox)    
+
+const box = document.getElementById("box")
+
+const newH1 = document.createElement("h1")
+
+newH1.textContent = "bro"
+newH1.style.color ="white"
+
+box.appendChild(newH1)
 
 
 
