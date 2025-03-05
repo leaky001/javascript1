@@ -2,6 +2,11 @@
     console.log(cohorts)
 
 
+//     (num < 6 ? num : null)).filter(num => num !== null);
+
+// console.log(lessThanSix);
+
+
     const nested = [[1,2],[3,4],[5,6]]
     console.log(nested);
 
@@ -17,13 +22,14 @@
    console.log(typeof replaceEl);
 
 //    to add a new element to last index of an array 
-cohorts[5] = "habbeb"
+cohorts[1] = "habbeb"
 console.log(cohorts);
 
 cohorts.forEach((names) => {
-    console.log(names.toLowerCase)
+    console.log(names.toUpperCase())
     
 })
+
 
 const student = ["Yemi", "Soliu", "Simbi","Fatimoh", "Maryam","Lateefat"]
 console.log(student)
@@ -35,25 +41,27 @@ console.log(student)
 const pushed = student.push("Bisola", "Lateffat")
 console.log(pushed) 
 
+
+
 //2; pop method : we use it to remove the last element in an array
 
 
 const number = [3,2,1,4,5,8,7,0,9]
 console.log(number);
 
-const popped = number .pop() // to svae the remove element in a variable 
+const popped = number .pop() // to save the remove element in a variable 
 console.log(popped);//to view the removed element
 console.log(number);
 
 //3; shift method : is used to remove the first elements of an array
 const colors = ["Green" ,"Red", "Black", "White"]
-console.log(colors)
+console.log(colors);
 
 const remEl = colors.shift(); //To save the removed element in a variable
-console.log(colors)
-console.log(remEl)
+console.log(colors);
+console.log(remEl);
 
-// 4; unshift; : it i used to add one or more elements to the beginning of an array
+// 4; unshift; : it is used to add one or more elements to the beginning of an array
 
 const fruit = ["orange", "apple", "greap"]
 console.log(fruit)
@@ -62,7 +70,7 @@ const unShift = fruit.unshift("watermelon", "Mango")
 console.log(fruit)
 console.log(unShift)
 
-// splice
+// splice is used to add an elements to a certain points
 const foods= ["rice","beans","amala", "semo", "eba", "poundedyam"]
 
 console.log(foods);
@@ -81,7 +89,7 @@ console.log(male)
 
 const newString = "Adeyemi"
 console.log(newString.length);
-const slicedString = newString.slice(1, 4);
+const slicedString = newString.slice(1,4);
 console.log(slicedString)
 
 const warriors = male.slice(1, 4)
@@ -184,6 +192,185 @@ console.log(prices)
 
 const commodities = investory.map((value)=> value.name)
 console.log(commodities)
+
+// map method
+//The .map() method is used to create a new array by applying a function to each element of an existing array. it also creat a new array and apply function to each element without modifying the original array
+const arr = [1,2,3,4,5,6];
+const multipliedVal = arr.map((el) => el * 2);
+console.log(multipliedVal)
+
+const world =["hello", "world", "javascript"];
+console.log(world.map((world) => world.toUpperCase))
+
+const pricesInUSD = [200, 120, 360, 90];
+const xchangeRate = 1490; 
+
+console.log(pricesInUSD.map((usd) => usd * xchangeRate ))
+
+const users = [
+    {name: "latefat",age: 300},
+    {name: "Abuliah", age: 950},
+    {name: "Muiz Banire", age: 1450},
+    {name: "Abdul Kabir", age: 1950}
+];
+
+const nameOnly = users.map((value) => value.name);
+console.log(nameOnly)
+
+
+const products = [
+    {name: "laptop",price: 300},
+    {name: "desktop", price: 950},
+    {name: "Mouse", price: 1450},
+    {name: " Key board", price: 1950}
+];
+
+const productWithId = products.map((product,index) => ({
+    id: index + 1,
+    ...product,
+}));
+
+console.log(productWithId)
+
+const productr = [
+    {name: "laptop",price: 300},
+    {name: "desktop", price: 950},
+    {name: "Mouse", price: 1450},
+    {name: " Key board", price: 1950}
+];
+
+const productWithI =  productr.map((index) =>index.productWithId)
+console.log(productWithId)
+
+
+//creat an array of number 1 to 10 use the map method to return only numbers that are less than six
+ 
+ 
+ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+const lessThanSix = numbers.map((i) => {
+    if(i < 6) {
+        return i
+    }
+
+})
+
+console.log(lessThanSix);
+
+
+
+// Filter methods;.filter() method is an array method used to create a new array with elements that pass a certain condition. It does not modify the original array.
+
+
+const evenNumber = numbers.filter((i)=> i % 2 === 0)
+console.log(evenNumber)
+
+const below = productWithId.filter((product) => product.price <= 1000)
+console.log(below)
+
+
+
+
+
+const product = [
+    {name: "laptop",price: 300},
+    {name: "desktop", price: 950},
+    {name: "Mouse", price: 1450},
+    {name: " Key board", price: 1950}
+];
+  
+  const nameProducts = productWithId.filter(product => product.name.length < 7);
+   
+  console.log(nameProducts);
+
+  let newArr = [100, "Pelumi", false, {},null, undefined]
+
+  const filteredString = newArr.filter((data) => typeof data === "string" ) 
+    console.log(filteredString)
+
+
+    // write an expression to return the sum of all this prices with filter method
+    // const product = [
+    //     {name: "laptop",price: 300},
+    //     {name: "desktop", price: 950},
+    //     {name: "Mouse", price: 1450},
+    //     {name: " Key board", price: 1950}
+    // ];
+    // const price = productWithId.filter((price) =>   price + "number");
+    // console.log(price)
+
+    // 
+    
+    // const product = [
+    //     {name: "laptop", price: 300},
+    //     {name: "desktop", price: 950},
+    //     {name: "Mouse", price: 1450},
+    //     {name: "Key board", price: 1950}
+    // ];
+    
+    // 
+    
+    
+    
+    let total = 0;
+    
+    products.filter(productWithId => (total += productWithId.price, true)); 
+    
+    console.log(total);
+    
+    
+
+    
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
