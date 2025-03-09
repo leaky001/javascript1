@@ -220,9 +220,33 @@ console.log({sum: student.favSum()})
 
 
 
+const student = {
+    name:"muiz",
+    age: 10,
+    grade:"tenth",
+    subject:["math","english","computer"],
+    address:{city:"pegamut",country:"nigeria"}
+
+}
+console.log(student)
 
 
+const car ={
+    brand :"toyota",
+    model :"camry",
+    year: 2023,
+    color:"yellow"
+}
+console.log(car)
 
+console.log= (car.brand)
+console.log=(car[year])
+
+car.color= (blue)
+console.log(car)
+
+car.log=cars
+console.log(cars)
 
 
 
