@@ -220,33 +220,177 @@ console.log({sum: student.favSum()})
 
 
 
-const student = {
-    name:"muiz",
-    age: 10,
-    grade:"tenth",
-    subject:["math","english","computer"],
-    address:{city:"pegamut",country:"nigeria"}
+// const student = {
+//     name:"muiz",
+//     age: 10,
+//     grade:"tenth",
+//     subject:["math","english","computer"],
+//     address:{city:"pegamut",country:"nigeria"}
+
+// }
+// console.log(student)
+
+
+// const car ={
+//     brand :"toyota",
+//     model :"camry",
+//     year: 2023,
+//     color:"yellow"
+// }
+// console.log(car)
+
+// console.log= (car.brand)
+// console.log=(car[year])
+
+// car.color= (blue)
+// console.log(car)
+
+// car.log=cars
+// console.log(cars)
+
+
+const player = {
+    firstName: "Messi",
+    lastName:"Leion",
+
+    age: 38,
+    team: {
+        clubName:"Liverpool",
+        location:"Dallas",
+        manager: "Pochettino"
+    },
+    jerseyNumber:1,
+}
+console.log(player)
+console.log(player.team.clubName)
+console.log(player['team']['manager'])
+
+player.team.location = ("chicago")
+console.log(player.team.location)
+
+
+const myObject = {
+    myMethod1: () => {}, // arrow function
+    myMethod2: function(){},//function decleration
+    myMethod3(){}//function expression
+}
+
+
+
+const dog = {
+    name:"Fluffy",
+    age:20,
+    bark:() => {
+        console.log("woof woof")
+    }
+}
+
+console.log(dog.name)
+dog.bark();
+
+
+
+// object .keys()
+// object.value()
+// object . freeze()
+// object.enteres()
+// object.seal()
+
+const employees = {
+    Boss: "Bola",
+    secetary:"Kola",
+    sales:"Table",
+    accountant:"Deborah"
+}
+
+const employeeInfo = Object.keys(employees)
+console.log(employeeInfo)
+
+// it create a nested array of the key and value pairs
+
+const session = {
+    id:1,
+    date:"10-march-2025",
+    device:"Mobile",
+    browser: "Chrome"
+}
+
+const sessionValue = Object.entries(session)
+console.log(sessionValue)
+
+
+const operatingSystem = {
+    name :"Liniox",
+    fashion : "Obotun",
+    license : "Open-source"
 
 }
-console.log(student)
+// freeze can aslo be defined as modifiying of exsisting property from being added or remove
 
-
-const car ={
-    brand :"toyota",
-    model :"camry",
-    year: 2023,
-    color:"yellow"
+const user = {
+    userName: "Olakash",
+    passWord: "Amala123",
 }
-console.log(car)
+const userInfo = Object.freeze(user)
+console.log(userInfo)
 
-console.log= (car.brand)
-console.log=(car[year])
+userInfo.userName = "Ali"
+console.log(userInfo)
 
-car.color= (blue)
-console.log(car)
+// SEAL  prevent new property being added and remove
+const checkSeal = Object.seal(operatingSystem)
+ operatingSystem.age = 30;
+ console.log(operatingSystem)
 
-car.log=cars
-console.log(cars)
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
