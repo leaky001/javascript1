@@ -347,6 +347,58 @@ const checkSeal = Object.seal(operatingSystem)
  
 
 
+ function getUser(userId) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("User fetched from database");
+            resolve({ id: userId, username: "john_doe" });
+        }, 1000);
+    });
+}
+
+function validatePassword(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Password validated");
+            resolve(user);
+        }, 1000);
+    });
+}
+
+function fetchUserPerm(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Permissions fetched");
+            resolve({ ...user, permissions: ["read", "write"] });
+        }, 1000);
+    });
+}
+
+function fetchUserProfile(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("User profile fetched");
+            resolve({ ...user, profile: { age: 30, email: "john@example.com" } });
+        }, 1000);
+    });
+}
+
+function userResponse(user) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Response sent to user:", user);
+            resolve("Success");
+        }, 1000);
+    });
+}
+
+getUser(1)
+    .then(validatePassword)
+    .then(fetchUserPerm)
+    .then(fetchUserProfile)
+    .then(userResponse)
+    .then((result) => console.log("Final result:", result))
+    .catch((err) => console.error(err));
 
 
 
