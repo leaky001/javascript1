@@ -22,11 +22,12 @@ function lol (a,b) {
 
 console.log(lol(1,2))
 
+
 function jamb (mon) {
     if (mon> 30) {
         return "You are too old to register"
 
-    } else if (mon < 30 && mon > 18)  {
+    } else if ( mon > 18)  {
         return "you are qualified to register"
 
     } else{
@@ -137,13 +138,13 @@ console.log(registration("muiz", "pass123", "Nigeria","kogi", 'email'))
 
 // Global Scope
 
- let globalVar = "i am global"
+//  let globalVar = "i am global"
 
- function showVar(){
-     console.log(globalVar)
- }
+//  function showVar(){
+//      console.log(globalVar)
+//  }
 
-showVar()
+// showVar()
 
 
 

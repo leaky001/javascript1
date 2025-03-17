@@ -1,4 +1,11 @@
-const cohortCredentials = {
+//This object contains usernames as keys and their corresponding email and password  as values:
+
+
+
+
+
+
+const cohortLogin = {
     "muiz": { email: "Dev@muiz.com", password: "muizpass" },
     "kabir": { email: "Dev@kabir.com", password: "kabirpass" },
     "ridwan": { email: "Dev@ridwan.com", password: "ridwanpass" },
@@ -10,6 +17,8 @@ const cohortCredentials = {
     "feranmi": { email: "Dev@feranmi.com", password: "feranmipass" }
 };
 
+// This login function is called when we want to try to log in.
+
 function login() {
     let email = document.getElementById("email").value.trim();
     let password = document.getElementById("password").value.trim();
@@ -17,8 +26,10 @@ function login() {
 
     errorMessage.textContent = ""; 
 
+    // If the email or password is empty it shows an  all fields are not requried
+
     if (!email || !password) {
-        errorMessage.textContent = "All fields are required.";
+        errorMessage.textContent = "All fields are  required.";
         return;
     }
 
@@ -27,17 +38,18 @@ function login() {
         return;
     }
 
-    let userFound = false;
+    
 
-    for (let cohort in cohortCredentials) {
-        if (cohortCredentials[cohort].email === email && cohortCredentials[cohort].password === password) {
+    for (let cohort in cohortLogin) {
+        if (cohortLogin[cohort].email === email && cohortLogin[cohort].password === password) {
             alert(`Hi ${email}, You are now logged in!`);
-            userFound = true;
-            break;
+            
+            
+            
         }
     }
 
-    if (!userFound) {
-        errorMessage.textContent = "Invalid email or password.";
+    if (!cohortFound) {
+        errorMessage.textContent = "Invalid email and password.";
     }
 }
