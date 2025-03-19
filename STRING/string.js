@@ -29,7 +29,7 @@ console.log(index)
 
 // The indexOf() method returns the position of the first occurrence of a value in a string.
 
-const firstOccurence = item.indexOf("Africa")
+const firstOccurence = item.indexOf("frica")
 console.log(firstOccurence)
 
 // The substring() method extracts characters, between two indices (positions), from a string, and returns the substring.
@@ -71,7 +71,7 @@ const endWith = item.endsWith("Nigeria");
 console.log(endWith);
 
 
-const email = "   yourname@gmail.com  ";
+const email = "   yourname@gmail.com   ";
 console.log(email)
 const trimmedEmail = email.trim();
 console.log(trimmedEmail)
@@ -92,7 +92,7 @@ console.log(example)
 
 
 
-//how does javascript handles premitive and non primitive value 
+//how does javascript handles primitive and non primitive value 
 
 //value and reference in js
 //primitive [passed by value]
